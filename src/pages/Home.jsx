@@ -3,19 +3,20 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="w-full h-screen bg-gradient-to-r from-purple-300 via-pink-200 to-blue-200 flex">
-        <div className="w-full md:w-[45%] h-screen md:flex justify-center items-center">
-          
-            <div
-              className="w-full h-screen md:w-[400px] md:h-[400px] rounded-lg shadow-lg"
-              style={{ backgroundImage: "url('/images/image.jpg')",
-                backgroundPosition: "center",
-                backgroundSize: "cover"
-               }}></div>
-          
+      <div className="w-full min-h-screen bg-gradient-to-r from-purple-300 via-pink-200 to-blue-200 flex flex-col md:flex-row">
+        <div className="w-full relative md:w-[45%] flex justify-center items-center">
+          <div
+            className="w-full h-screen md:w-[400px] md:h-[400px] rounded-lg shadow-lg"
+            style={{
+              backgroundImage: "url('/images/image.jpg')",
+              backgroundPosition: "center",
+              backgroundSize: "cover"
+            }}
+          ></div>
         </div>
-        <div className="absolute md:relative md:w-[55%] md:h-screen">
-          <div className="pt-120 pb-10 p-10 md:pt-48 md:pl-10 md:pr-30">
+
+        <div className="w-full absolute md:relative md:w-[55%] flex items-center">
+          <div className="p-6 pt-110 md:p-10">
             <span className="text-xl md:text-4xl block text-white md:text-blue-900 font-semibold">
               Hi, I am
             </span>
