@@ -4,9 +4,9 @@ const Home = () => {
   return (
     <>
       <div className="w-full min-h-screen bg-gradient-to-r from-purple-300 via-pink-200 to-blue-200 flex flex-col md:flex-row">
-        <div className="w-full relative md:w-[45%] flex justify-center items-center">
+        <div className="w-full relative md:w-[40%] flex justify-center items-center">
           <div
-            className="w-full h-screen md:w-[400px] md:h-[400px] rounded-lg shadow-lg"
+            className="w-full h-screen md:w-[400px] md:h-[400px] md:rounded-full md:shadow-2xl"
             style={{
               backgroundImage: "url('/images/image.jpg')",
               backgroundPosition: "center",
@@ -15,8 +15,8 @@ const Home = () => {
           ></div>
         </div>
 
-        <div className="w-full absolute bottom-0 md:relative md:w-[55%] flex items-center">
-          <div className="p-6 md:p-10">
+        <div className="w-full absolute bottom-0 md:relative md:w-[60%] flex items-center">
+          <div className="p-6 md:p-4 md:pr-30">
             <span className="text-xl md:text-4xl block text-white md:text-blue-900 font-semibold">
               Hi, I am
             </span>
